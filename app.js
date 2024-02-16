@@ -34,7 +34,7 @@ const minutes = futureDate.getMinutes()
 
 
 let month = futureDate.getMonth()
-month = months[month] 
+month = months[month]  
 const date = futureDate.getDate()
 
 
