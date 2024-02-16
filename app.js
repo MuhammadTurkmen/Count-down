@@ -50,7 +50,7 @@ function getRemainingTime() {
   const t = futureTime - today
   // 1s = 1000ms
   // 1m = 60s
-  // 
+  // 1hr = 60min
   // 
 }
 
