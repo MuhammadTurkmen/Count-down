@@ -52,6 +52,9 @@ function getRemainingTime() {
   // 1m = 60s
   // 1hr = 60min
   // 1d = 24hr
+
+  // values in ms
+  
 }
 
 getRemainingTime()
