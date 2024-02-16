@@ -31,4 +31,9 @@ let futureDate = new Date(2024, 4, 24, 11, 30, 0)
 const year = futureDate.getFullYear()
 const hours = futureDate.getHours()
 const minutes = futureDate.getMinutes()
+
+
+let month = futureDate.getMonth()
+
+
 giveaway.textContent = `giveaway ends on ${year} ${hours}:${minutes}am`
