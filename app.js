@@ -25,3 +25,5 @@ const weekdays = [
 const giveaway = document.querySelector('.giveaway')
 const deadling = document.querySelector('.deadline')
 const items = document.querySelectorAll('.deadling-format h4')
+
+let futureDate = new Date()
