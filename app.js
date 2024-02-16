@@ -34,6 +34,6 @@ const minutes = futureDate.getMinutes()
 
 
 let month = futureDate.getMonth()
-
+month = months[month]
 
 giveaway.textContent = `giveaway ends on ${year} ${hours}:${minutes}am`
