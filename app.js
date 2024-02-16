@@ -38,5 +38,5 @@ month = months[month]
 const date = futureDate.getDate()
 
 
-const weekday = futureDate.getDay()
+const weekday = weekdays[futureDate.getDay()]
 giveaway.textContent = `giveaway ends on ${date} ${month} ${year} ${hours}:${minutes}am`
