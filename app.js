@@ -39,4 +39,4 @@ const date = futureDate.getDate()
 
 
 const weekday = weekdays[futureDate.getDay()]
-giveaway.textContent = `giveaway ends on ${weekday} ${date} ${month} ${year} ${hours}:${minutes}am`
+giveaway.textContent = `giveaway ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}am`
