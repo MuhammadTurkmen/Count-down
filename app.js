@@ -47,6 +47,7 @@ const futureTime = futureDate.getTime()
 
 function getRemainingTime() {
   const today = new Date().getTime
+  const t = futureTime - today
 }
 
 getRemainingTime()
