@@ -24,3 +24,4 @@ const weekdays = [
 
 const giveaway = document.querySelector('.giveaway')
 const deadling = document.querySelector('.deadline')
+const items 
