@@ -44,3 +44,5 @@ giveaway.textContent = `giveaway ends on ${weekday}, ${date} ${month} ${year} ${
 
 // future time in ms  
 const futureTime = futureDate.getTime()
+
+function getRemainingTime()
