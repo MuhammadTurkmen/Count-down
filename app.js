@@ -48,6 +48,10 @@ const futureTime = futureDate.getTime()
 function getRemainingTime() {
   const today = new Date().getTime
   const t = futureTime - today
+  // 1s = 1000ms
+  // 1m = 60s
+  // 
+  // 
 }
 
 getRemainingTime()
