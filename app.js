@@ -37,4 +37,6 @@ let month = futureDate.getMonth()
 month = months[month]
 const date = futureDate.getDate()
 
+
+const weekday = futureDate.getDay()
 giveaway.textContent = `giveaway ends on ${date} ${month} ${year} ${hours}:${minutes}am`
