@@ -68,7 +68,7 @@ function getRemainingTime() {
   const values = [days, hours, minutes, seconds]
 
   items.forEach(function(item, index) {
-    
+    item.innerHTML = values[index]
   })
 
 }
