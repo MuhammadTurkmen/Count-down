@@ -25,15 +25,15 @@ const giveaway = document.querySelector('.giveaway');
 const deadline = document.querySelector('.deadline');
 const items = document.querySelectorAll('.deadline-format h4');
 
-let tempDate = new Date()
-let tempYear = tempDate.getFullYear()
-let tempMoth = tempDate.getMonth()
-let tempDay = tempDate.getDate()
+let tempDate = new Date();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay = tempDate.getDate();
+// months are ZERO index based;
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
 
-// let  futureDate = new Date(2024, 3, 24, 11, 0, 0)
+// let futureDate = new Date(2020, 3, 24, 11, 30, 0);
 
-
-const futureDate = new Date(tempYear, tempMoth, tempDate + 10, 11, 30, 0)
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
@@ -66,12 +66,11 @@ function getRemaindingTime() {
 
   // set values array
   const values = [days, hours, minutes, seconds];
-
   function format(item) {
-    if(item < 10) {
-      return item = `0${item}`
+    if (item < 10) {
+      return (item = `0${item}`);
     }
-    return item
+    return item;
   }
 
   items.forEach(function (item, index) {
@@ -79,12 +78,11 @@ function getRemaindingTime() {
   });
 
   if (t < 0) {
-    clearInterval(countdown)
-    deadline.innerHTML = `<h4 class="expired">sorry, this giveaway has expired</h4>`
+    clearInterval(countdown);
+    deadline.innerHTML = `<h4 class="expired">sorry, this giveaway has expired!</h4>`;
   }
-
 }
-// count down
-let countdown = setInterval(getRemaindingTime, 1000)
+// countdown;
+let countdown = setInterval(getRemaindingTime, 1000);
 //set initial values
 getRemaindingTime();
