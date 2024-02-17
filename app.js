@@ -68,7 +68,7 @@ function getRemaindingTime() {
   const values = [days, hours, minutes, seconds];
 
   if(item < 10) {
-    return
+    return item = `0${item}`
   }
 
   items.forEach(function (item, index) {
