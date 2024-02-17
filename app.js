@@ -78,7 +78,8 @@ function getRemaindingTime() {
     item.innerHTML = format(values[index]);
   });
 
-
 }
+// count down
+
 //set initial values
 getRemaindingTime();
