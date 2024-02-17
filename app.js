@@ -61,7 +61,7 @@ function getRemainingTime() {
   let days = t/oneDay
   days = Math.floor(days)
   let hours = Math.floor((t % oneDay) / oneHour)
-  let minutes = Math.floor((t % hours) / oneMinute)
+  let minutes = Math.floor((t % oneHour) / oneMinute)
 
 
 
