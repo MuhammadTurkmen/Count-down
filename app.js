@@ -60,7 +60,7 @@ function getRemainingTime() {
   // calculate all value
   let days = t/oneDay
   days = Math.floor(days)
-  let hours = t / oneHour
+  let hours = (t % oneDay) / oneHour
 
 
 
