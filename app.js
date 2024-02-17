@@ -59,6 +59,11 @@ function getRemainingTime() {
   const oneMinute = 60 * 1000
   // calculate all value
   let days = t/oneDay
+  days = Math.floor(days)
+
+
+
+
 }
 
 getRemainingTime()
