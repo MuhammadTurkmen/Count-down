@@ -78,6 +78,10 @@ function getRemaindingTime() {
     item.innerHTML = format(values[index]);
   });
 
+  if (t < 0) {
+    clearInterval(countdown)
+  }
+
 }
 // count down
 let countdown = setInterval(getRemaindingTime, 1000)
