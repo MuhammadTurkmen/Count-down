@@ -30,8 +30,10 @@ let tempYear = tempDate.getFullYear()
 let tempMoth = tempDate.getMonth()
 let tempDay = tempDate.getDate()
 
-let  futureDate = new Date(2024, 3, 24, 11, 0, 0)
+// let  futureDate = new Date(2024, 3, 24, 11, 0, 0)
 
+
+const futureDate = new Date(tempYear, tempMoth, tempDate + 10, 11, 30, 0)
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
