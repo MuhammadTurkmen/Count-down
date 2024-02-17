@@ -80,6 +80,6 @@ function getRemaindingTime() {
 
 }
 // count down
-
+let countdown = setInterval(getRemaindingTime, 1000)
 //set initial values
 getRemaindingTime();
